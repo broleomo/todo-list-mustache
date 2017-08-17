@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do list</title>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+               <input type="text" name="text" placeholder="Add a todo.." />
+               <button> Add a todo</button>
+               <ul>
+                 {{#todos}}
+                 {{#yetTodo}}
+                 <li>
+                <form action="/complete"  method="post">
+                  <button type="submit" name="complete" value="{{todo}}">Mark Complete</button>
+                  {{todo}}
+                  </ul>
+                </form>
+  </body>
+</html>
